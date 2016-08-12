@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>BookManager</display-name>
+  <servlet>
+    <servlet-name>com.book.controller.DeptServlet</servlet-name>
+    <servlet-class>com.book.controller.DeptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.book.controller.DeptServlet</servlet-name>
+    <url-pattern>/admin/dept.servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>com.book.controller.BookInfoServlet</servlet-name>
+    <servlet-class>com.book.controller.BookInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.book.controller.BookInfoServlet</servlet-name>
+    <url-pattern>/book/bookinfo.servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>com.book.controller.BookServlet</servlet-name>
+    <servlet-class>com.book.controller.BookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.book.controller.BookServlet</servlet-name>
+    <url-pattern>/book/book.servlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
